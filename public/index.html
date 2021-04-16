@@ -13,16 +13,50 @@
       crossorigin="anonymous"
     />
 
-    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="/assets/style.css" />
   </head>
   <body>
-    <div class="container">
-      <h1>Watch List</h1>
-      <p>
-        Under construction. Come back soon to see this amazing app. You'll love
-        it.
-      </p>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Movie Watch List</h1>
+        <p class="lead">
+          Keep track of the movies you want to watch with some friends.
+        </p>
+      </div>
     </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md">
+          <form>
+            <h2>Add a movie to the list</h2>
+            <div class="form-group">
+              <label for="movie-title">Movie Title</label>
+              <input type="text" class="form-control" id="movie-title" />
+            </div>
+            <div class="form-group">
+              <label for="movie-rating">Rating</label>
+              <input
+                type="number"
+                min="1"
+                max="5"
+                class="form-control"
+                id="movie-rating"
+              />
+            </div>
+            <button type="submit" class="btn btn-primary mt-3">Submit</button>
+          </form>
+        </div>
+        <div class="col-md">
+          <h2>Watch List</h2>
+          <ul class="list-group">
+            <li class="list-group-item">Ben Hur | 5</li>
+            <li class="list-group-item">Back to the Future | 5</li>
+            <li class="list-group-item">Clueless | 3</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
     <script src="/assets/movies.js"></script>
   </body>
 </html>
