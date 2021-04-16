@@ -1,10 +1,12 @@
 [
   {
     "id": "123abc",
-    "title": "Ben Hur"
+    "title": "Ben Hur",
+    "rating": 5
   },
   {
     "id": "123zzz",
-    "title": "Back to the Future"
+    "title": "Back to the Future",
+    "rating": 5
   }
 ]
