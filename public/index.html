@@ -27,11 +27,11 @@
     <div class="container">
       <div class="row">
         <div class="col-md">
-          <form>
+          <form method="POST" action="/api/movies">
             <h2>Add a movie to the list</h2>
             <div class="form-group">
               <label for="movie-title">Movie Title</label>
-              <input type="text" class="form-control" id="movie-title" />
+              <input name="title" type="text" class="form-control" id="movie-title" />
             </div>
             <div class="form-group">
               <label for="movie-rating">Rating</label>
@@ -41,6 +41,7 @@
                 max="5"
                 class="form-control"
                 id="movie-rating"
+                name="rating"
               />
             </div>
             <button type="submit" class="btn btn-primary mt-3">Submit</button>

@@ -8,7 +8,7 @@ const createMovieApiRoutes = (app) => {
   app.post("/api/movies", (req, res) => {
     const { title, rating } = req.body;
     db.createMovie(title, rating)
-      .then((movie) => res.json(movie))
+      .then(() => res.redirect("/"))
       .catch((err) => {
         console.log(err);
         res.sendStatus(400);
