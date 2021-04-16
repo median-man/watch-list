@@ -26,6 +26,10 @@ const PORT = process.env.PORT || 3000;
 app.use(
   express.static(path.join(__dirname, "./public"), { extensions: [".html"] })
 );
+
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
 createMovieApiRoutes(app);
 
 // Listener

@@ -19,11 +19,13 @@ const createMovie = (title, rating) => {
       rating,
     };
     movies.push(movie);
-    return fs.writeFile(
-      path.join(__dirname, "./movies.json"),
-      JSON.stringify(movies),
-      "utf-8"
-    );
+    return fs
+      .writeFile(
+        path.join(__dirname, "./movies.json"),
+        JSON.stringify(movies),
+        "utf-8"
+      )
+      .then(() => movie);
   });
 };
 
