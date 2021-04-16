@@ -1,0 +1,24 @@
+{
+  "name": "watch-list",
+  "version": "1.0.0",
+  "description": "Office Hours demonstration of ExpressJS",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/median-man/watch-list.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/median-man/watch-list/issues"
+  },
+  "homepage": "https://github.com/median-man/watch-list#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
